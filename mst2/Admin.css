@@ -1,0 +1,146 @@
+﻿.ltxt
+{
+    height:30px;
+    width:200px;
+    padding-left:8px;
+    border:solid 1px #ccc;
+    margin-top:3px;
+}
+.lbtn
+{
+   height:35px;
+   width:200px;
+   padding-left:8px;
+   border:solid 1px #ccc;
+   background:#2D71FF;
+   margin-top:3px;
+   color:#fff;
+   border-radius:4px;
+   transition:background 1s ease;
+}
+.lbtn:hover
+{
+    cursor:pointer;
+    height:35px;
+    width:200px;
+    padding-left:8px;
+    border:solid 1px #ccc;
+    background:#6699ff;
+    margin-top:3px;
+    color:#fff;
+    border-radius;4px;
+}
+.atitle
+{
+    color:#FFFFFF;
+    font-size:22px;
+    text-align:center;
+    font-weight:bold;
+    font-size:medium;
+}
+.ltext
+{
+    height:30px;
+    width:200px;
+    padding-left:8px;
+    border:solid 1px #ccc;
+    margin-top:3px;
+}
+.btnmenu
+{
+    height:35px;
+    width:225px;
+    padding-left:8px;
+    background:#2D71FF;
+    font-weight:bold;
+    padding-left:8px;
+    border:solid 1px #ccc;
+    background:#2D71FF;
+    margin-top:1px;
+    color:#fff;
+    font-size:medium;                                                                  
+    }
+.btnmenu:hover
+{
+    cursor:pointer;
+    height:35px;
+    width:225px;
+    padding-left:8px;
+    border:solid 1px #ccc;
+    background:#6699ff;
+    margin-top:1PX;
+    color:#fff;
+}
+.tbl
+{
+    width:100%;
+    border:solid 1px #6699ff;
+}
+.tbl:head
+{
+    height:35px;
+    font-size:medium;
+    font-weight:bold;
+    color:#fff;
+    background:#2D71FF;
+    text-align:center;
+}
+.text
+{
+    width:160px;
+    height:22px;
+    border:solid 1px #ccc;
+    padding-left:5px;
+}
+   .txt:focus
+   {
+       width:160px;
+       height:22px;
+       border:solid 1px #2D71FF;
+       padding-left:5px;
+   }
+   .btn
+   {
+       height:30px;
+       width:100px;
+       padding-left:8px;
+       border:solid 1px #ccc;
+       background:#6699ff;
+       margin-top:5px;
+       font-weight:bold;
+       font-size:14px;
+       color:#fff;
+       border-radius:15px;
+       transition: Background 1s ease;
+      
+   }
+    .btn:hover
+    {
+        cursor:pointer;
+        height:30px;
+        width:100px;
+        padding-left:8px;
+        border:solid 1px #ccc;
+        background:#2D71FF;
+        margin-top:5px;
+        color:#fff;
+        
+    }
+    .lbl
+    {
+        color:#004AE6;
+        text-align:right;
+    }
+    .alogin
+    {
+        height:250px;
+        width:300px;
+        border:solid 1px #ccc;
+        border-top:solid 11px #6699ff;
+        background:#fff;
+        margin-top:100px;
+    }
+    
+    
+    
+    

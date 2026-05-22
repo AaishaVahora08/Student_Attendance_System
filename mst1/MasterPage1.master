@@ -1,0 +1,151 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage1.master.cs" Inherits="mst1_MasterPage1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style4
+        {
+            border-left: 1px solid #339966;
+            border-right: 1px solid #339966;
+            border-bottom: 1px solid #339966;
+            width: 577px;
+            height: 250px;
+            margin-top: 25px;
+            border-top: solid 8px #339966;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0;
+                padding: 0px 47px;
+        }
+        .style5
+        {
+            width: 479px;
+        }
+        .style6
+        {
+            color: #006600;
+        }
+    </style>
+    <link href="Home.css" rel="stylesheet" type="text/css" />   
+    
+</head>
+
+
+ 
+<body>
+    
+    <form id="form1" runat="server">
+    <div class="wrapper">
+        <table class="style1">
+            <tr>
+                <td colspan="2" align="center">
+                    <asp:ImageButton ID="ImageButton3" runat="server" Height="165px" 
+                        ImageUrl="~/image/logo1.png" PostBackUrl="~/image/logo1.png" 
+                        Width="1082px" onclick="ImageButton3_Click" />
+                    <br />
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <asp:Button ID="Button1" runat="server" 
+                        PostBackUrl="~/mst1/Home.aspx" Text="Home" Width="170px" 
+                        CssClass="btnmenu" />
+&nbsp;
+                    <asp:Button ID="Button2" runat="server" 
+                        PostBackUrl="~/mst1/Standard.aspx" Text="Standard" Width="170px" 
+                        CssClass="btnmenu" />
+&nbsp;
+                    <asp:Button ID="Button3" runat="server" 
+                        PostBackUrl="~/mst1/Staff.aspx" Text="Staff" Width="170px" 
+                        CssClass="btnmenu" />
+&nbsp;
+                    <asp:Button ID="Button4" runat="server" 
+                        onclick="Button4_Click" PostBackUrl="~/mst1/Admin Panel.aspx" 
+                        Text="Admin Panel" Width="170px" CssClass="btnmenu" />
+&nbsp;
+                    <asp:Button ID="Button5" runat="server" 
+                        PostBackUrl="~/mst1/Contact Us.aspx" Text="Contact Us" Width="170px" 
+                        CssClass="btnmenu" />
+                </td>
+            </tr>
+            <tr>
+                <td align="left" class="style4">
+                    <span class="style6"><strong>Student Login</strong></span><br />
+                    <br />
+                    Login name<asp:TextBox ID="TextBox1" runat="server" 
+                        Width="145px" CssClass="txt" BorderColor="#339933"></asp:TextBox>
+                    <br />
+                    Password&nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox2" runat="server" Width="145px" CssClass="txt" 
+                        BorderColor="#339933" TextMode="Password"></asp:TextBox>
+                    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button7"  runat="server" 
+                        onclick="Button7_Click" style="color: #000000" Text="Login" Width="90px" 
+                        CssClass="btnmenu" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />
+&nbsp;<asp:ImageButton ID="ImageButton1" runat="server" Height="73px" 
+                        ImageUrl="~/image/student.png" />
+&nbsp;student login with username and<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Password and view riports&nbsp;&nbsp;&nbsp;
+                    <br />
+                    <br />
+                </td>
+                <td rowspan="2" class="style5">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <p>
+                            &nbsp;</p>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="style4" align="left">
+                    <span class="style6"><strong>Staff Lofin</strong></span><br />
+                    <br />
+                    Login name<asp:TextBox 
+                        ID="TextBox3" runat="server" 
+                        Width="145px" CssClass="txt" BorderColor="#339933"></asp:TextBox>
+                    <br />
+                    Password&nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox4" runat="server" Width="145px" CssClass="txt" 
+                        BorderColor="#339933" TextMode="Password"></asp:TextBox>
+                    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button8" runat="server" 
+                        style="color: #000000" Text="Login" Width="90px" CssClass="btnmenu" 
+                        onclick="Button8_Click" />
+                    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Stafflbl" runat="server" Text="Label"></asp:Label>
+                    <br />
+&nbsp;<asp:ImageButton ID="ImageButton2" runat="server" Height="61px" 
+                        ImageUrl="~/image/teacher.png" Width="66px" />
+&nbsp;staff can make attendance of
+                    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; student and generate reports after<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; login to system<br />
+                    <br />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+    
+</body>
+</html>

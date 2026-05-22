@@ -1,0 +1,61 @@
+﻿
+    .btnmenu
+    {
+        width:163px;
+        height:35px;
+        margin:10px;
+        border:solid 1px #339966;
+        font-size:medium;
+        font-weight:bold;
+        background-color:transparent;
+        transistion:background 1s ease;
+        cursor:pointer;
+        border-radius:2px;
+       
+    }
+    .btnmenu:hover
+    {
+        width:163px;
+        height:35px;
+        margin:10px;
+        border:solid 1px #339966;
+        color:#fff;
+        background-color:#339966;
+    }
+    .studentlogin
+    {
+        width:3000px;
+        height:250px;
+        border:solid 1px #339966;
+        margin:0 auto;
+        margin-top:25px;
+        border-top:solid 8px #339966;
+    }
+    .stafflogin
+    {
+        width:3000px;
+        height:250px;
+        border:solid 1px #339966;
+        margin:0 auto;
+        margin-top:25px;
+        border-top:solid 8px #339966;
+    }
+    .wrapper
+{
+        width: 1274px;
+    margin:auto;
+    height:824px;
+}
+.txt
+{
+   margin: 10px 4px;
+}
+    
+    .loginbtn
+    {
+        margin: 11px 48px;
+    }
+    
+    
+ 
+    

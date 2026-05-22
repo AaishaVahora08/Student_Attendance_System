@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="mst2_MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            height: 18px;
+        }
+        .style3
+        {
+            height: 25px;
+            width: 407px;
+        }
+        .style4
+        {
+            width: 407px;
+        }
+    </style>
+    <link href="Admin.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="tbl">
+            <tr>
+                <td class="style2" colspan="2">
+                    <br />
+                    <table class="style1">
+                        <tr>
+                            <td align="left">
+                                <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/image/logo1.png" 
+                                    Width="849px" />
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td class="style4">
+                    <asp:Button ID="Button2" runat="server" BackColor="#3333FF" ForeColor="White" 
+                        Text="Admin menu" Width="278px" PostBackUrl="~/mst2/Admin_menu.aspx" 
+                        CssClass="btnmenu" />
+                </td>
+                <td rowspan="8">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="style3">
+                    <br />
+                    <asp:Button ID="Button3" runat="server" BackColor="#3333FF" ForeColor="White" 
+                        Text="Add Standard" Width="278px" PostBackUrl="~/mst2/Add Standard.aspx" 
+                        CssClass="btnmenu" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style4">
+                    <br />
+                    <asp:Button ID="Button4" runat="server" BackColor="#3333FF" ForeColor="White" 
+                        Text="Add devesion " Width="278px" PostBackUrl="~/mst2/Adddiv.aspx" 
+                        CssClass="btnmenu" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style4">
+                    <br />
+                    <asp:Button ID="Button5" runat="server" Text="Add Staff" Width="278px" 
+                        BackColor="#3333FF" ForeColor="White" PostBackUrl="~/mst2/Addstaff.aspx" 
+                        CssClass="btnmenu" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style4">
+                    <br />
+                    <asp:Button ID="Button6" runat="server" Text="Staff report" Width="278px" 
+                        BackColor="#3333FF" ForeColor="White" 
+                        PostBackUrl="~/mst2/StaffReportaspx.aspx" CssClass="btnmenu" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style4">
+                    <br />
+                    <asp:Button ID="Button7" runat="server" Text="Leave" Width="278px" 
+                        BackColor="#3333FF" ForeColor="White" CssClass="btnmenu" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style4">
+                    <br />
+                    <asp:Button ID="Button8" runat="server" Text="Student report" Width="278px" 
+                        BackColor="#3333FF" ForeColor="White" CssClass="btnmenu" 
+                        PostBackUrl="~/mst2/Student report.aspx" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style4">
+                    <br />
+                    <asp:Button ID="Button9" runat="server" Text="Logout" Width="278px" 
+                        BackColor="#3333FF" ForeColor="White" 
+                        PostBackUrl="~/mst1/Admin panel.aspx" CssClass="btnmenu" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
