@@ -1,0 +1,101 @@
+﻿.btnmenu
+{
+    width:100px;
+    height:35px;
+    margin:0px;
+    border:solid 1px Red;
+    font-size:medium;
+    font-weight:bold;
+    background-color:transparent;
+    transistion:background 1s ease;
+    cursor:pointer;
+    border-radius:2px;
+    margin-left:0px;
+}
+    .btnmenu:hover
+    {
+        width:100px;
+        height:35px;
+        margin:0px;
+        border:solid 1px Red;
+        color:#fff;
+        background-color:Red;
+    }
+    .leftmenu
+    {
+        width:250px;
+        height:550px;
+       border:solid 0px green;
+       margin:0 auto;
+       margin-top:0px;
+       border-top:0px;
+       border-top:solid 8px Red;
+    }
+    .left
+    {
+        width:251px;
+        height:188px;
+        border:solid 0px #ccc;
+        background:#FDFDFD;
+        float:left;
+    }
+    .tbl
+    {
+        width:100%;
+        border:solid 1px Red;
+    }
+    .tblhead
+    {
+        height:40px;
+        color:#fff;
+        text-align:left;
+        font-size:20px;
+        font-weight:bold;
+        background:red;
+        padding-left:10px;
+    }
+    .main
+    {
+        width:1000px;
+        height:90px;
+        border:solid 0px #ccc;
+        background:#fff;
+    }
+    .menu
+    {
+        width:1000px;
+         height:40px;
+       border:solid 0px #ccc;
+           
+    }
+    .mainn
+    {
+        width:1000px;
+        height:575px;
+        border:solid 0px #ccc;
+        background:#FDFDFD;
+        margin-top:2px;
+       
+        
+    }
+    .tblhead
+    {
+        
+      color:#ccc;
+    font-size:22px;
+    text-align:center;
+    font-weight:bold;
+    font-size:medium;
+    }
+
+
+/* me adding css*/
+.tblrow
+{
+    
+}
+    
+        
+        
+    
+    

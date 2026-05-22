@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Staff.master.cs" Inherits="mst3_Staff" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            font-size: x-large;
+            color: #FF0000;
+        }
+        .mainn
+        {
+            width: 79px;
+        }
+        .style7
+        {
+            height: 159px;
+            
+        }
+        .style8
+        {
+            width: 518px;
+        }
+        .style9
+        {
+            width: 518px;
+            height: 40px;
+            border: solid 0px #ccc;
+        }
+    </style>
+</head>
+<link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+
+<body>
+    <form id="form1" runat="server">
+   
+    <p>
+        <table>
+            <tr>
+                <td colspan="2" class="style7">
+                    <asp:ImageButton ID="ImageButton1" runat="server" 
+                        ImageUrl="~/image/stafflogo.png" Width="865px" />
+                </td>
+            </tr>
+            </table>
+
+            <div id="mainn"></div>
+            <div id ="leftmenu"></div>
+            <div id ="left"></div>
+            <table class ="tbl">
+
+            <tr>
+                <td id="mainn" class="style8">
+                    <asp:ImageButton ID="ImageButton2" runat="server" Height="132px" 
+                        ImageUrl="~/image/teacher.png" Width="183px" />
+                    <br />
+                    <span class="style2">&nbsp;&nbsp;&nbsp;&nbsp; Welcome</span></td>
+                <td rowspan="9" id="mainn" class="menu">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="style9" id="mainn">
+                    <asp:Button ID="Button1" runat="server" Text="Home" Width="195px" 
+                        CssClass="btnmenu" PostBackUrl="~/mst3/Home.aspx" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style9" id="mainn">
+                    <asp:Button ID="Button2" runat="server" Text="Add Student" Width="195px" 
+                        CssClass="btnmenu" PostBackUrl="~/mst3/Addstudent.aspx" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style9" id="mainn">
+                    <asp:Button ID="Button3" runat="server" Text="Student Report" Width="195px" 
+                        CssClass="btnmenu" PostBackUrl="~/mst3/StudentReport.aspx" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style9" id="mainn">
+                    <asp:Button ID="Button4" runat="server" Text="Attendance " Width="195px" 
+                        CssClass="btnmenu" PostBackUrl="~/mst3/Attendance.aspx" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style9" id="mainn">
+                    <asp:Button ID="Button5" runat="server" Text="Attendance Report" 
+                        Width="195px" CssClass="btnmenu" 
+                        PostBackUrl="~/mst3/Attendance Riport.aspx" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style9" id="mainn">
+                    <asp:Button ID="Button6" runat="server" Text="Leave" Width="195px" 
+                        CssClass="btnmenu" PostBackUrl="~/mst3/Leave.aspx" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style9" id="mainn">
+                    <asp:Button ID="Button7" runat="server" Text="Password" Width="195px" 
+                        CssClass="btnmenu" PostBackUrl="~/mst3/password.aspx" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style9" id="mainn">
+                    <asp:Button ID="Button8" runat="server" Text="Logout" Width="195px" 
+                        CssClass="btnmenu" PostBackUrl="~/mst1/Home.aspx" />
+                </td>
+            </tr>
+        </table>
+        <br />
+    </p>
+    
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="student.master.cs" Inherits="mst4_student" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        </style>
+    <link href="student.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+    <div align="left">
+        <table class="style1">
+            <tr>
+                <td colspan="2" class="style1" align="char">
+                    <br />
+                    <asp:ImageButton ID="ImageButton3" runat="server" 
+                        ImageUrl="~/image/studentlogo.png" Width="638px" />
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+                    <asp:ImageButton ID="ImageButton2" runat="server" Height="151px" 
+                        ImageUrl="~/image/sd.png" Width="179px" />
+                    <br />
+&nbsp; WELCOME</td>
+                <td align="center" rowspan="7">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <p>
+                            hnbvcxxzikuyjhaFGVxszaNNNNNNNNVCDEEE445YU</p>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button1" runat="server" Text="Home" Width="258px" 
+                        CssClass="btnmenu" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button2" runat="server" Text="My Profile" Width="258px" 
+                        PostBackUrl="~/mst4/my profile.aspx" CssClass="btnmenu" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button3" runat="server" Text="Leave" Width="258px" 
+                        CssClass="btnmenu" PostBackUrl="~/mst4/Leave.aspx" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button4" runat="server" Text="Attendance Report" 
+                        Width="258px" CssClass="btnmenu" PostBackUrl="~/mst4/Attendance.aspx" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button5" runat="server" Text="Password" Width="258px" 
+                        PostBackUrl="~/mst4/Password.aspx" CssClass="btnmenu" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button6" runat="server" Text="Logout" Width="258px" 
+                        PostBackUrl="~/mst1/Home.aspx" CssClass="btnmenu" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
